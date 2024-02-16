@@ -33,5 +33,18 @@
             </div>
         </div>
     </div>
+
+    <script>
+
+        const apiKey = "b52b3da2310e22c5358d3f45de7d9274";
+        const apiUrl = "https://api.openweathermap.org/data/2.5/weather?&units=standard&q=nassau";
+
+        async function checkWeather(){
+            const response = await fetch(apiUrl + `&appid=${apiKey}`);
+            var data = await response.json();
+
+            
+        }
+    </script>
 </body>
 </html>
